@@ -1,0 +1,21 @@
+* text=auto
+
+# Unity serialises these as text; merging them by hand is what UnityYAMLMerge is for.
+*.unity     text merge=unityyamlmerge eol=lf
+*.prefab    text merge=unityyamlmerge eol=lf
+*.asset     text merge=unityyamlmerge eol=lf
+*.mat       text merge=unityyamlmerge eol=lf
+*.meta      text merge=unityyamlmerge eol=lf
+*.controller text merge=unityyamlmerge eol=lf
+
+*.cs        text diff=csharp eol=lf
+*.json      text eol=lf
+*.md        text eol=lf
+*.asmdef    text eol=lf
+
+# Binary assets
+*.png       binary
+*.jpg       binary
+*.ttf       binary
+*.bin       binary
+*.bundle    binary
